@@ -9,6 +9,7 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import questions.validar;
 import task.pruebaTask;
+import utils.SeleniumDemo;
 
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
@@ -19,6 +20,7 @@ public class pruebaStep {
     {
         OnStage.setTheStage(new OnlineCast());
         OnStage.theActorCalled("Pablo");
+        SeleniumDemo.web();
     }
 
 
