@@ -1,0 +1,58 @@
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+
+repositories {
+    mavenCentral()
+}
+
+
+buildscript {
+    repositories {
+        maven {
+            mavenCentral()
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.81")
+        classpath "io.freefair.gradle:lombok-plugin:5.0.0-rc6"
+        classpath "net.serenity-bdd:serenity-gradle-plugin:2.1.4"
+        classpath "net.serenity-bdd:serenity-single-page-report:2.1.4"
+
+    }
+}
+
+apply plugin: "io.freefair.lombok"
+apply plugin:'java'
+apply plugin:'idea'
+apply plugin:'eclipse'
+apply plugin:'net.serenity-bdd.aggregator'
+
+
+dependencies {
+
+
+    implementation 'net.serenity-bdd:serenity-ensure:2.3.12'
+    implementation 'net.serenity-bdd:serenity-cucumber:3.1.15'
+    implementation 'net.serenity-bdd:serenity-screenplay:2.0.82'
+    /* Ejecutar test en fase de verificacion */
+    testImplementation group: 'org.apache.maven.plugins', name: 'maven-failsafe-plugin', version: '2.22.2'
+    /* */
+    implementation group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: '3.1.20'
+    /* Teslink */
+    implementation group: 'com.github.kalokanand', name: 'testlink-api-client', version: '2.0'
+    implementation group: 'br.eti.kinoshita', name: 'testlink-java-api', version: '1.9.6-1'
+
+
+    /* OWAPZAP */
+    implementation group: 'org.zaproxy', name: 'zap-clientapi', version: '1.8.0'
+    implementation group: 'org.zaproxy', name: 'zap', version: '2.9.0'
+
+
+
+
+}
+serenity {
+    reports = ["single-page-html"]
+}
