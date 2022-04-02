@@ -1,5 +1,8 @@
 name: Build qa
-on: [push]
+on:
+  push:
+    branches: [push]
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,9 +13,13 @@ jobs:
         with:
           java-version: 17
           distribution: 'adopt'
-      - uses: gradle/gradle-build-action@v2
+          cache: gradle
+      - name: Build with Gradle
+        run: ./gradlew build
+      - name: Archive test report
+        uses: actions/upload-artifact@v2
         with:
-          arguments: build
-
+          name: Test report
+          path: build/reports/tests/test
 
 
