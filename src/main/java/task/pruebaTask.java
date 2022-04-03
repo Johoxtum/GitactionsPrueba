@@ -5,12 +5,11 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 
-import java.util.Map;
-
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static userinterfaces.Mapeo.*;
 
 public class pruebaTask implements Task {
+
     @Override
     public <T extends Actor> void performAs(T actor) {
 
@@ -20,8 +19,6 @@ public class pruebaTask implements Task {
                 Click.on(BTN)
 
         );
-
-
     }
 
     public static pruebaTask informacion() {
