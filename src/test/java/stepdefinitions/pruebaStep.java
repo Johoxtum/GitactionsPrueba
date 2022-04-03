@@ -11,9 +11,13 @@ import questions.validar;
 import task.pruebaTask;
 import utils.SeleniumDemo;
 
+import java.util.logging.Logger;
+
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class pruebaStep {
+
+    Logger logger = Logger.getLogger("MyLog");
 
     @Before
     public void setThestage()
@@ -31,8 +35,13 @@ public class pruebaStep {
     }
     @When("Ingreso los siguientes datos solicitados")
     public void ingresoLosSiguientesDatosSolicitados() {
+        try {
+            theActorInTheSpotlight().attemptsTo(pruebaTask.informacion());
+        } catch (Exception e) {
+            logger.info(">Error");
+        }
 
-        theActorInTheSpotlight().attemptsTo(pruebaTask.informacion());
+
     }
     @Then("Veo la pantalla principal")
     public void veoLaPantallaPrincipal() {
