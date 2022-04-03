@@ -20,7 +20,7 @@ public class SeleniumDemo {
         //proxy.setHttpProxy(ZAP_PROXYHOST + ":" + ZAP_PROXYPORT).setSslProxy(ZAP_PROXYHOST + ":" + ZAP_PROXYPORT); //comentar al subir pipeline
 
         String downloadPath = "scr\\test\\resources\\data\\";
-        System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
         HashMap<String, Object> preferences = new HashMap<String, Object>();
         preferences.put("profile.default_content_settings.popups", 0);
         preferences.put("download.default_directory", downloadPath);
