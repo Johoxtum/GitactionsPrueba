@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Como usuario quiero ingresar a la aplicacion" skipped="1" tests="1" time="1.39" timestamp="2022-04-03 12:18:15"><testcase name="Colocar los datos de logeo"><skipped/></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Como usuario quiero ingresar a la aplicacion" skipped="0" tests="1" time="16.31" timestamp="2022-04-04 04:42:12"><testcase name="Colocar los datos de logeo"/></testsuite>
