@@ -2,8 +2,6 @@ package utils;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import net.serenitybdd.core.annotations.findby.By;
-import net.serenitybdd.screenplay.actions.Click;
-import net.serenitybdd.screenplay.actions.Enter;
 import org.openqa.selenium.Proxy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,7 +9,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import org.openqa.selenium.remote.CapabilityType;
 import org.zaproxy.clientapi.core.ClientApi;
-import task.pruebaTask;
 
 
 import java.nio.charset.StandardCharsets;
@@ -19,8 +16,6 @@ import java.nio.file.Files;
 import java.nio.file.LinkOption;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-
-import static userinterfaces.Mapeo.*;
 
 
 public class OwaspZap {
