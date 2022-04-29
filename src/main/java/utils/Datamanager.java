@@ -2,7 +2,6 @@ package utils;
 
 import lombok.AllArgsConstructor;
 import models.Database;
-import models.DocumentType;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnStage;
