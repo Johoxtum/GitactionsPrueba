@@ -17,6 +17,7 @@ public class Driver {
     public static WebDriver browser;
 
     public static Driver web() {
+
         Proxy proxy = new Proxy(); //comentar al subir pipeline
         proxy.setHttpProxy(ZAP_PROXYHOST + ":" + ZAP_PROXYPORT).setSslProxy(ZAP_PROXYHOST + ":" + ZAP_PROXYPORT); //comentar al subir pipeline
 
