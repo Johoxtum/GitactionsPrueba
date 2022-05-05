@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Como usuario quiero ingresar a la aplicacion" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-05T20:12:18" hostname="DESKTOP-FJ634HR" time="9.805">
+<testsuite name="Como usuario quiero ingresar a la aplicacion" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-05T20:34:57" hostname="DESKTOP-FJ634HR" time="11.627">
   <properties/>
-  <testcase name="Colocar los datos de logeo" classname="Como usuario quiero ingresar a la aplicacion" time="9.805"/>
+  <testcase name="Colocar los datos de logeo" classname="Como usuario quiero ingresar a la aplicacion" time="11.627"/>
   <system-out><![CDATA[|-- Given Ingreso usuario a la pagina web
 |---- Pablo opens the https://www.saucedemo.com/
 |-- When Ingreso los siguientes datos solicitados
@@ -12,11 +12,11 @@
 |-- Then Veo la pantalla principal
 Implementa-------------------OWAPZAP
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 13211
+  <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 41385
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-may 05, 2022 3:12:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+may 05, 2022 3:35:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 ]]></system-err>
 </testsuite>
