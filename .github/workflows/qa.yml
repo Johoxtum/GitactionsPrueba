@@ -45,6 +45,10 @@ jobs:
         if: ${{ always() }}
         uses: actions/upload-artifact@v2
         with:
+<<<<<<< HEAD
+=======
+          name: report saucedemo
+>>>>>>> d2a7f0ca7470bc66e75a5658e9e48221b59d49a0
           retention-days: 1
           path: |
             target/site/serenity/serenity-summary.html
