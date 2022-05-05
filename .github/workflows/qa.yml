@@ -29,7 +29,7 @@ jobs:
       - name: Install Chrome
         shell: bash
         run: |
-          sh ./shells/chrome.sh
+          sh ./shell/chrome.sh
 
   integration-test-qa:
     runs-on: ubuntu-latest
