@@ -1,5 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Como usuario quiero ingresar a la aplicacion" skipped="0" tests="1" time="11.05" timestamp="2022-04-20 08:49:28"><testcase name="Colocar los datos de logeo"><error type="java.lang.NullPointerException"/><system-err>null&#13;
-task.probeTask.informacion(probeTask.java:41)&#13;
-stepdefinitions.pruebaStep.ingresoLosSiguientesDatosSolicitados(pruebaStep.java:39)&#13;
-✽.Ingreso los siguientes datos solicitados(file:///E:/Inteliij/Pruebagitactions/src/test/resources/features/prueba.feature:5)&#13;
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Como usuario quiero ingresar a la aplicacion" skipped="0" tests="1" time="0.0" timestamp="2022-05-04 10:07:18"><testcase name="Colocar los datos de logeo"/></testsuite>

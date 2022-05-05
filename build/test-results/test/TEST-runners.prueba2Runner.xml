@@ -8,8 +8,8 @@ SLF4J: Found binding in [jar:file:/C:/Users/Johoxtum/.gradle/caches/modules-2/fi
 SLF4J: Found binding in [jar:file:/C:/Users/Johoxtum/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-nop/1.5.3/36a3c886235cddd05e55a979cef549196740231a/slf4j-nop-1.5.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
 SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
-1020 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///E:/Inteliij/Pruebagitactions/src/test/resources/features/prueba2.feature
-1309 [Test worker] INFO  - 
+906 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///E:/Inteliij/Pruebagitactions/src/test/resources/features/prueba2.feature
+1172 [Test worker] INFO  - 
 
 -------------------------------------------------------------------------------------
      _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
@@ -25,12 +25,12 @@ SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
  Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
 -------------------------------------------------------------------------------------
 
-1329 [Test worker] INFO  - Test Suite Started: Como usuario deseo ingresa a la pagina correctamente
-1356 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///E:/Inteliij/Pruebagitactions/src/test/resources/features/prueba2.feature
-1360 [Test worker] INFO  - Test Suite Started: Como usuario deseo ingresa a la pagina correctamente
+1188 [Test worker] INFO  - Test Suite Started: Como usuario deseo ingresa a la pagina correctamente
+1219 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///E:/Inteliij/Pruebagitactions/src/test/resources/features/prueba2.feature
+1219 [Test worker] INFO  - Test Suite Started: Como usuario deseo ingresa a la pagina correctamente
 log4j:WARN No appenders could be found for logger (freemarker.cache).
 log4j:WARN Please initialize the log4j system properly.
 log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
-15235 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Cleanup test resources for URI file:///E:/Inteliij/Pruebagitactions/src/test/resources/features/prueba2.feature
+14544 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Cleanup test resources for URI file:///E:/Inteliij/Pruebagitactions/src/test/resources/features/prueba2.feature
 ]]></system-err>
 </testsuite>

@@ -1,36 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Como usuario deseo ingresa a la pagina correctamente" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-04-29T14:36:28" hostname="DESKTOP-FJ634HR" time="12.544">
+<testsuite name="Como usuario deseo ingresa a la pagina correctamente" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-05T03:09:26" hostname="DESKTOP-FJ634HR" time="11.698">
   <properties/>
-  <testcase name="Validar el ingreso a la aplicacion correctamente" classname="Como usuario deseo ingresa a la pagina correctamente" time="12.544">
-    <failure message="org.openqa.selenium.WebDriverException: unknown error: net::ERR_PROXY_CONNECTION_FAILED&#10;  (Session info: chrome=100.0.4896.127)&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'DESKTOP-FJ634HR', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_312'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [c559baa9dffc79569e9aa69f61faf1fb, get {url=https://www.saucedemo.com/}]&#10;Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Johoxtum\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51522}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(manual, http=localhos..., se:cdp: ws://localhost:51522/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c559baa9dffc79569e9aa69f61faf1fb" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: unknown error: net::ERR_PROXY_CONNECTION_FAILED
-  (Session info: chrome=100.0.4896.127)
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'DESKTOP-FJ634HR', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_312'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c559baa9dffc79569e9aa69f61faf1fb, get {url=https://www.saucedemo.com/}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Johoxtum\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51522}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(manual, http=localhos..., se:cdp: ws://localhost:51522/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c559baa9dffc79569e9aa69f61faf1fb
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:327)
-	at utils.Driver.inThePage(Driver.java:52)
-	at utils.Datamanager.initActor(Datamanager.java:59)
-	at stepdefinitions.prueba2Step.queElUsuarioIngresaALaPaginaWeb(prueba2Step.java:28)
-	at ✽.que Camilo  ingresa a la pagina web(file:///E:/Inteliij/Pruebagitactions/src/test/resources/features/prueba2.feature:7)
-</failure>
-  </testcase>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[1579 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///E:/Inteliij/Pruebagitactions/src/test/resources/features/prueba2.feature
-1775 [Test worker] INFO  - 
+  <testcase name="Validar el ingreso a la aplicacion correctamente" classname="Como usuario deseo ingresa a la pagina correctamente" time="11.698"/>
+  <system-out><![CDATA[Implementa-------------------OWAPZAP
+]]></system-out>
+  <system-err><![CDATA[1438 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///E:/Inteliij/Pruebagitactions/src/test/resources/features/prueba2.feature
+1610 [Test worker] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
  |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
@@ -38,25 +13,24 @@ Session ID: c559baa9dffc79569e9aa69f61faf1fb
 
 Validar el ingreso a la aplicacion correctamente(como-usuario-deseo-ingresa-a-la-pagina-correctamente;validar-el-ingreso-a-la-aplicacion-correctamente)
 --------------------------------------------------------------------------------
-Starting ChromeDriver 100.0.4896.60 (6a5d10861ce8de5fce22564658033b43cb7de047-refs/branch-heads/4896@{#875}) on port 52927
+Starting ChromeDriver 100.0.4896.60 (6a5d10861ce8de5fce22564658033b43cb7de047-refs/branch-heads/4896@{#875}) on port 55528
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-abr 29, 2022 9:36:32 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1651720169.887][WARNING]: This version of ChromeDriver has not been tested with Chrome version 101.
+may 04, 2022 10:09:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
-abr 29, 2022 9:36:32 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTENCIA: Unable to find an exact match for CDP version 100, so returning the closest version found: 97
-abr 29, 2022 9:36:32 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-INFORMACIÓN: Found CDP implementation for version 100 of 97
-13734 [Test worker] ERROR  - 
-  _____   ___   ___   _____     ___   ___   ___    ___    ___ 
- |_   _| | __| / __| |_   _|   | __| | _ \ | _ \  / _ \  | _ \
-   | |   | _|  \__ \   | |     | _|  |   / |   / | (_) | |   /
-   |_|   |___| |___/   |_|     |___| |_|_\ |_|_\  \___/  |_|_\
+may 04, 2022 10:09:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 101, so returning the closest version found: 97
+may 04, 2022 10:09:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFORMACIÓN: Found CDP implementation for version 101 of 97
+11583 [Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
 Validar el ingreso a la aplicacion correctamente
----------------------------------------------------------------
-13890 [Test worker] ERROR  -     Test failed at step: Dado que Camilo ingresa a la pagina web
-13891 [Test worker] ERROR  -     unknown error: net::ERR_PROXY_CONNECTION_FAILED
+----------------------------------------------------------------------
 ]]></system-err>
 </testsuite>
