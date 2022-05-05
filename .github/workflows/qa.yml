@@ -39,7 +39,9 @@ jobs:
           java-version: '8'
       - uses: actions/checkout@v3
       - name: Run test with gradle
-        run: gradle test -i
+        uses: gradle/gradle-build-action@0d13054264b0bb894ded474f08ebb30921341cee
+        with:
+          arguments: build -i
       - name: Results Owasp Zap
         run: |
           cd pipeline/
