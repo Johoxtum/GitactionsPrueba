@@ -1,3 +1,4 @@
+/*
 package runners;
 
 import io.cucumber.junit.CucumberOptions;
@@ -13,3 +14,4 @@ import org.junit.runner.RunWith;
 )
 public class prueba2Runner {
 }
+*/

@@ -1,4 +1,3 @@
-/*
 package runners;
 
 
@@ -15,4 +14,3 @@ import org.junit.runner.RunWith;
 )
 public class pruebaRunner {
 }
-*/

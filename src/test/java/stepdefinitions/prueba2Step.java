@@ -32,7 +32,7 @@ public class prueba2Step {
     public void juanIngresaLosDatosDeLogeo() {
 
         Database userLoginData = OnStage.theActorInTheSpotlight().recall(constans.LOGIN_DATA_KEY);
-        theActorInTheSpotlight().attemptsTo(probeTask.withData(userLoginData));
+        //theActorInTheSpotlight().attemptsTo(probeTask.withData(userLoginData));
 
        /* Database userLoginData = OnStage.theActorInTheSpotlight().recall(constans.LOGIN_DATA_KEY);
         OnStage.withCurrentActor(
