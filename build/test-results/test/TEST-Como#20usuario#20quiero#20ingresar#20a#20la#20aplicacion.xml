@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Como usuario quiero ingresar a la aplicacion" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-05T16:09:07" hostname="DESKTOP-FJ634HR" time="14.535">
+<testsuite name="Como usuario quiero ingresar a la aplicacion" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-05T16:19:28" hostname="DESKTOP-FJ634HR" time="10.917">
   <properties/>
-  <testcase name="Colocar los datos de logeo" classname="Como usuario quiero ingresar a la aplicacion" time="14.535"/>
+  <testcase name="Colocar los datos de logeo" classname="Como usuario quiero ingresar a la aplicacion" time="10.917"/>
   <system-out><![CDATA[|-- Given Ingreso usuario a la pagina web
 |---- Pablo opens the https://www.saucedemo.com/
 |-- When Ingreso los siguientes datos solicitados
@@ -12,8 +12,8 @@
 |-- Then Veo la pantalla principal
 Implementa-------------------OWAPZAP
 ]]></system-out>
-  <system-err><![CDATA[1756 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///E:/Inteliij/Pruebagitactions/src/test/resources/features/prueba.feature
-1971 [Test worker] INFO  - 
+  <system-err><![CDATA[1562 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///E:/Inteliij/Pruebagitactions/src/test/resources/features/prueba.feature
+1773 [Test worker] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
  |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
    | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
@@ -21,20 +21,20 @@ Implementa-------------------OWAPZAP
 
 Colocar los datos de logeo(como-usuario-quiero-ingresar-a-la-aplicacion;colocar-los-datos-de-logeo)
 --------------------------------------------------------------------------------
-2981 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
-4090 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
-4106 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Johoxtum\.cache\selenium\chromedriver\win32\101.0.4951.41\chromedriver.exe
-Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 52595
+2694 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Using automatically driver download
+3973 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+3988 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Johoxtum\.cache\selenium\chromedriver\win32\101.0.4951.41\chromedriver.exe
+Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 49400
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-may 05, 2022 11:09:13 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+may 05, 2022 11:19:33 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
-may 05, 2022 11:09:13 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 05, 2022 11:19:33 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 ADVERTENCIA: Unable to find an exact match for CDP version 101, so returning the closest version found: 97
-may 05, 2022 11:09:13 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+may 05, 2022 11:19:33 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFORMACIÓN: Found CDP implementation for version 101 of 97
-15262 [Test worker] INFO  - 
+11513 [Test worker] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
  |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
    | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
