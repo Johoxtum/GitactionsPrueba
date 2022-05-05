@@ -45,7 +45,7 @@ jobs:
         uses: gradle/wrapper-validation-action@e6e38bacfdf1a337459f332974bb2327a31aaf4b
       - name: Runner-Test
         shell: bash
-        run: bash ./gradlew test --stacktrace
+        run: bash ./gradlew test
       - name: Results Owasp Zap
         run: |
           cd pipeline/
