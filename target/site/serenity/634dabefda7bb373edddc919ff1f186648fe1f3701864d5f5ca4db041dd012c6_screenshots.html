@@ -23,19 +23,31 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
-<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
-<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
 <link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
 
 <!-- Required Javascript -->
 <script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
-<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
-<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
-<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.20/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.10.20/time-elapsed-dhms.js"></script>
 
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <script src="bootstrap/js/bootstrap.min.js"></script>
 
+<script type="text/javascript" src="datatables/1.10.20/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.20/datatables.bootstrap4.min.css" rel="stylesheet" />
 
 <script>
     jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
@@ -59,16 +71,7 @@
 </script>
 <link rel="stylesheet" href="css/core.css"/>
 <link rel="stylesheet" href="css/link.css"/>
-<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
-<!--CHART.JS-->
-<script src="chartjs/chart.js"></script>
-<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
-<script src="chartjs/patternomaly.min.js"></script>
-<script>
-    // Register the plugin to all charts:
-    Chart.register(ChartDataLabels);
-</script>
-<!-- Nivo Slider -->
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
 <link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
 <script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
@@ -142,16 +145,16 @@
 <div>
     <ul class="nav nav-tabs" role="tablist">
         <li class="active">
-            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
         </li>
         <li >
-            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
         <li >
-            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 05-05-2022 11:19</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-05-2022 12:21</span>
     <br style="clear:left"/>
 </div>
 
@@ -166,7 +169,7 @@
                         <td>
                             <div>
                                 <h3 class="discreet-story-header">
-                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <i class="fa fa-2x fa-comments-o"></i>
                                     <span class="story-header-title">Como Usuario Quiero Ingresar A La Aplicacion </span>
                                     <span class="badge tag-badge" style="">Feature</span>
                                 </h3>
@@ -186,7 +189,7 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
                             <span class="test-case-title">
                                 <span class="success-color">Colocar los datos de logeo
                                     <span class="related-issue-title"></span>
@@ -207,19 +210,19 @@
     <div id="contenttilttle">
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="0e44e700e17515cd40c55b3d7446e611e7ed7f0595a38bb25a9f7e4eb645037f.png" title=" Given Ingreso usuario a la pagina web" width="800"/>
-                <img src="0e44e700e17515cd40c55b3d7446e611e7ed7f0595a38bb25a9f7e4eb645037f.png" title=" Pablo opens the https://www.saucedemo.com/" width="800"/>
-                <img src="0e44e700e17515cd40c55b3d7446e611e7ed7f0595a38bb25a9f7e4eb645037f.png" title=" Given Ingreso usuario a la pagina web (completed)" width="800"/>
-                <img src="83e4870a8763e12aedb157295d90b2df1c2d954239a5056f1df9646540482e38.png" title=" When Ingreso los siguientes datos solicitados" width="800"/>
-                <img src="83e4870a8763e12aedb157295d90b2df1c2d954239a5056f1df9646540482e38.png" title=" Pablo probe task" width="800"/>
-                <img src="83e4870a8763e12aedb157295d90b2df1c2d954239a5056f1df9646540482e38.png" title=" Pablo enters 'standard_user' into Usuario" width="800"/>
-                <img src="83e4870a8763e12aedb157295d90b2df1c2d954239a5056f1df9646540482e38.png" title=" Pablo enters 'secret_sauce' into Usuario" width="800"/>
-                <img src="76c48e6748904c2e132f1834b78e8722f53e26733278197d2de9331c3dd22c0a.png" title=" Pablo enters 'secret_sauce' into Usuario (completed)" width="800"/>
-                <img src="76c48e6748904c2e132f1834b78e8722f53e26733278197d2de9331c3dd22c0a.png" title=" Pablo clicks on Usuario" width="800"/>
-                <img src="c30fecc5dad73add73cc5cb5a9e4ecf484163da3991485bf4a4fcc61425eb9d2.png" title=" Pablo clicks on Usuario (completed)" width="800"/>
-                <img src="c30fecc5dad73add73cc5cb5a9e4ecf484163da3991485bf4a4fcc61425eb9d2.png" title=" Pablo probe task (completed)" width="800"/>
-                <img src="c30fecc5dad73add73cc5cb5a9e4ecf484163da3991485bf4a4fcc61425eb9d2.png" title=" When Ingreso los siguientes datos solicitados (completed)" width="800"/>
-                <img src="c30fecc5dad73add73cc5cb5a9e4ecf484163da3991485bf4a4fcc61425eb9d2.png" title=" Then Veo la pantalla principal: <span class='success-color'>SUCCESS</span>" width="800"/>
+                <img src="6a7203ee527b71fabb6c8621b059141e1669c778fc543bb84de956eeca82caeb.png" title=" Given Ingreso usuario a la pagina web" width="800"/>
+                <img src="6a7203ee527b71fabb6c8621b059141e1669c778fc543bb84de956eeca82caeb.png" title=" Pablo opens the https://www.saucedemo.com/" width="800"/>
+                <img src="6a7203ee527b71fabb6c8621b059141e1669c778fc543bb84de956eeca82caeb.png" title=" Given Ingreso usuario a la pagina web (completed)" width="800"/>
+                <img src="db764f10c9fe598990b7a9e33f33e916b1a0e86c306cc31ba5cab556fa1ee1f9.png" title=" When Ingreso los siguientes datos solicitados" width="800"/>
+                <img src="db764f10c9fe598990b7a9e33f33e916b1a0e86c306cc31ba5cab556fa1ee1f9.png" title=" Pablo probe task" width="800"/>
+                <img src="db764f10c9fe598990b7a9e33f33e916b1a0e86c306cc31ba5cab556fa1ee1f9.png" title=" Pablo enters 'standard_user' into Usuario" width="800"/>
+                <img src="db764f10c9fe598990b7a9e33f33e916b1a0e86c306cc31ba5cab556fa1ee1f9.png" title=" Pablo enters 'secret_sauce' into Usuario" width="800"/>
+                <img src="3e7a9f3943b76c5cb602acbb44138e107140089fae5d3742c94cdb0a96030610.png" title=" Pablo enters 'secret_sauce' into Usuario (completed)" width="800"/>
+                <img src="3e7a9f3943b76c5cb602acbb44138e107140089fae5d3742c94cdb0a96030610.png" title=" Pablo clicks on Usuario" width="800"/>
+                <img src="16968166c24f1c2a5b03aaffef47d161e23533cbabffb236dc6f93b3b00fb925.png" title=" Pablo clicks on Usuario (completed)" width="800"/>
+                <img src="16968166c24f1c2a5b03aaffef47d161e23533cbabffb236dc6f93b3b00fb925.png" title=" Pablo probe task (completed)" width="800"/>
+                <img src="16968166c24f1c2a5b03aaffef47d161e23533cbabffb236dc6f93b3b00fb925.png" title=" When Ingreso los siguientes datos solicitados (completed)" width="800"/>
+                <img src="16968166c24f1c2a5b03aaffef47d161e23533cbabffb236dc6f93b3b00fb925.png" title=" Then Veo la pantalla principal: <span class='success-color'>SUCCESS</span>" width="800"/>
             </div>
         </div>
 
@@ -228,7 +231,7 @@
 </div>
 <div id="beforefooter"></div>
 <div id="bottomfooter">
-    <span class="version">Serenity BDD version 3.1.20</span>
+    <span class="version">Serenity BDD version 2.4.24</span>
 </div>
 </body>
 </html>
