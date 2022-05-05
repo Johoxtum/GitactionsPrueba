@@ -35,7 +35,6 @@ ext {
     jsonSchemaValidatorVersion = '3.0.7'
     jsonPath = '4.3.2'
     lombokVersion = '1.18.16'
-
     serenityCucumberVersion = '2.4.24'
 }
 
@@ -66,7 +65,11 @@ dependencies {
     testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
 }
 
-
+test {
+    testLogging.showStandardStreams = true
+    maxParallelForks=3
+    systemProperties System.getProperties()
+}
 
 serenity {
     reports = ["single-page-html"]
@@ -74,3 +77,4 @@ serenity {
 
 gradle.startParameter.continueOnFailure = true
 
+test.finalizedBy(aggregate)
