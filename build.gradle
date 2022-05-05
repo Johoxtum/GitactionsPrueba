@@ -35,7 +35,7 @@ ext {
     jsonSchemaValidatorVersion = '3.0.7'
     jsonPath = '4.3.2'
     lombokVersion = '1.18.16'
-    javaFakerVersion = '1.0.2'
+
     serenityCucumberVersion = '2.4.24'
 }
 
@@ -52,8 +52,7 @@ dependencies {
             "junit:junit:${junitVersion}",
             "org.assertj:assertj-core:${assertJVersion}",
             "io.rest-assured:json-schema-validator:${jsonSchemaValidatorVersion}",
-            "io.rest-assured:json-path:${jsonPath}",
-            "com.github.javafaker:javafaker:${javaFakerVersion}"
+            "io.rest-assured:json-path:${jsonPath}"
 
     implementation group: 'org.zaproxy', name: 'zap-clientapi', version: '1.8.0'
     implementation group: 'org.zaproxy', name: 'zap', version: '2.9.0'
@@ -67,11 +66,7 @@ dependencies {
     testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
 }
 
-test {
-    testLogging.showStandardStreams = true
-    maxParallelForks=3
-    systemProperties System.getProperties()
-}
+
 
 serenity {
     reports = ["single-page-html"]
@@ -79,4 +74,3 @@ serenity {
 
 gradle.startParameter.continueOnFailure = true
 
-test.finalizedBy(aggregate)
