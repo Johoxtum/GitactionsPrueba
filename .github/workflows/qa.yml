@@ -36,13 +36,10 @@ jobs:
     environment: master
     needs: [ build-qa ]
     steps:
-      - name: Validate Gradle wrapper
-        uses: gradle/wrapper-validation-action@e6e38bacfdf1a337459f332974bb2327a31aaf4b
       - uses: actions/setup-java@v3 #Instalación JDK java
         with:
           distribution: 'adopt'
           java-version: '8'
-      - uses: actions/checkout@v3
       - name: Runner-Test
         shell: bash
         run: bash ./gradlew test --stacktrace
