@@ -46,6 +46,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: report saucedemo
+          uses: gradle :reports
           retention-days: 1
           path: |
             target/site/serenity/serenity-summary.html
