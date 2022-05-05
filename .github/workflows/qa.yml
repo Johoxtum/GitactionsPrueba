@@ -41,10 +41,9 @@ jobs:
           distribution: 'adopt'
           java-version: '8'
       - uses: actions/checkout@v3
-      - name: Run test with gradle
-        uses: gradle test
-        with:
-          arguments: build
+      - name: Runner-Test
+        shell: bash
+        run: bash ./gradlew test --stacktrace
       - name: Results Owasp Zap
         run: |
           cd pipeline/
