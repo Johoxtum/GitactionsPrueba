@@ -30,7 +30,6 @@ ext {
     serenityCoreVersion = '2.3.12'
     junitVersion = '4.13'
     assertJVersion = '3.8.0'
-    logbackVersion = '1.2.3'
     jsonSchemaValidatorVersion = '3.0.7'
     jsonPath = '4.3.2'
     lombokVersion = '1.18.16'
@@ -38,7 +37,7 @@ ext {
 }
 
 dependencies {
-    implementation "ch.qos.logback:logback-classic:${logbackVersion}"
+
 
     implementation "net.serenity-bdd:serenity-core:${serenityCoreVersion}",
             "net.serenity-bdd:serenity-junit:${serenityCoreVersion}",
