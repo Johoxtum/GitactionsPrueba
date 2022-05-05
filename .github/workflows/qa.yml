@@ -39,7 +39,7 @@ jobs:
           java-version: '8'
       - uses: actions/checkout@v3
       - name: Runner-Test
-        run: gradle test  --stacktrace --info
+        run: gradle test --info
       - name: Results Owasp Zap
         run: |
           cd pipeline/
