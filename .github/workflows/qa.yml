@@ -42,7 +42,7 @@ jobs:
         with:
           arguments: build
       - name: Ejectution report
-        uses: gradle :reports
+        run: gradle :reports
       - name: Report news
         if: ${{ always() }}
         uses: actions/upload-artifact@v2
