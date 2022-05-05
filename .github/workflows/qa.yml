@@ -38,7 +38,7 @@ jobs:
           java-version: '8'
       - uses: actions/checkout@v3
       - name: Run test with gradle
-        uses: gradle --info
+        run: ./gradlew test --stacktrace --info
         with:
           arguments: build
       - name: Ejectution report
