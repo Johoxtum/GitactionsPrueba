@@ -26,10 +26,7 @@ jobs:
           java-version: '8'
       - name: Validate Gradle wrapper
         uses: gradle/wrapper-validation-action@e6e38bacfdf1a337459f332974bb2327a31aaf4b
-      - name: Install Chrome
-        shell: bash
-        run: |
-          sh ./shell/chrome.sh
+
 
   integration-test-qa:
     runs-on: ubuntu-latest
@@ -41,10 +38,8 @@ jobs:
           distribution: 'adopt'
           java-version: '8'
       - uses: actions/checkout@v3
-      - name: Validate Gradle wrapper
-        uses: gradle/wrapper-validation-action@e6e38bacfdf1a337459f332974bb2327a31aaf4b
       - name: Runner-Test
-        run: gradle test -i
+        run: gradle test  --stacktrace --info
       - name: Results Owasp Zap
         run: |
           cd pipeline/
