@@ -27,13 +27,13 @@ targetCompatibility = 1.8
 
 ext {
     slf4jVersion = '1.7.7'
-    serenityCoreVersion = '2.3.12'
+    serenityCoreVersion = '3.1.20'
     junitVersion = '4.13'
     assertJVersion = '3.8.0'
     jsonSchemaValidatorVersion = '3.0.7'
     jsonPath = '4.3.2'
     lombokVersion = '1.18.16'
-    serenityCucumberVersion = '2.4.24'
+
 }
 
 dependencies {
@@ -45,15 +45,15 @@ dependencies {
             "net.serenity-bdd:serenity-screenplay-webdriver:${serenityCoreVersion}",
             "net.serenity-bdd:serenity-ensure:${serenityCoreVersion}",
             "net.serenity-bdd:serenity-screenplay-rest:${serenityCoreVersion}",
-            "net.serenity-bdd:serenity-cucumber6:${serenityCucumberVersion}",
             "junit:junit:${junitVersion}",
             "org.assertj:assertj-core:${assertJVersion}",
             "io.rest-assured:json-schema-validator:${jsonSchemaValidatorVersion}",
             "io.rest-assured:json-path:${jsonPath}"
-
     implementation group: 'org.zaproxy', name: 'zap-clientapi', version: '1.8.0'
     implementation group: 'org.zaproxy', name: 'zap', version: '2.9.0'
-
+    implementation group: 'com.github.kalokanand', name: 'testlink-api-client', version: '2.0'
+    implementation group: 'br.eti.kinoshita', name: 'testlink-java-api', version: '1.9.6-1'
+    implementation 'net.serenity-bdd:serenity-cucumber:3.1.15'
     annotationProcessor "org.projectlombok:lombok"
 
     compileOnly "org.projectlombok:lombok:${lombokVersion}"
@@ -64,7 +64,7 @@ dependencies {
 }
 
 test {
-    testLogging.showStandardStreams = false
+    testLogging.showStandardStreams = true
 
 
 }
