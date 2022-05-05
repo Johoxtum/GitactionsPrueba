@@ -52,6 +52,7 @@ jobs:
           ls
           npm i
           npm run evaluate
+          npm fund
       - name: Report news
         if: ${{ always() }}
         uses: actions/upload-artifact@v2
