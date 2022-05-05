@@ -44,7 +44,7 @@ public class pruebaStep {
         try {
 
             validar.validacion().answeredBy(theActorInTheSpotlight());
-            Owasp.owasp();
+           // Owasp.owasp();
 
 
         } catch (Exception e) {
