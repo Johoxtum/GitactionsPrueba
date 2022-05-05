@@ -15,31 +15,29 @@ jobs:
         uses: gradle/wrapper-validation-action@e6e38bacfdf1a337459f332974bb2327a31aaf4b
 
   integration-test:
-        runs-on: ubuntu-latest
-        environment: master
-        needs: [ build ]
-        steps:
-          - uses: actions/checkout@v3
-          - name: Run test with gradle
-            uses: gradle/gradle-build-action@0d13054264b0bb894ded474f08ebb30921341cee
-            with:
-              arguments: build
-          - name: Results Owasp Zap
-            run: |
-              cd pipeline/
-              pwd
-              ls
-              npm i
-              npm run evaluate
-          - name: Report news
-            if: ${{ always() }}
-            uses: actions/upload-artifact@v2
-            with:
-              name: report saucedemo
-              retention-days: 1
-              path: |
-                target/site/serenity/serenity-summary.html
-                target/site/serenity/index.html
+    runs-on: ubuntu-latest
+    environment: master
+    needs: [ build ]
+    steps:
+      - uses: actions/setup-java@v3 #Instalación JDK java
+        with:
+          distribution: 'adopt'
+          java-version: '8'
+      - uses: actions/checkout@v3
+      - name: Run test with gradle
+        uses: gradle/gradle-build-action@0d13054264b0bb894ded474f08ebb30921341cee
+        with:
+          arguments: build
+      - name: Report news
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: report saucedemo
+          retention-days: 1
+          path: |
+            target/site/serenity/serenity-summary.html
+            target/site/serenity/index.html
+
 
 
 
