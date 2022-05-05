@@ -1,23 +1,36 @@
-name: 'build qa'
+name: building-and-deployment-qa
+
 on:
-  - push
+  push:
+    branches:
+      - master
+      - qa
+      - features/adquirencia
+
+  workflow_dispatch:
+
+env:
+  project_name: "bbog-cb-automation-testing"
+  team: "cb" #cc-tc-cd-pv-bm-pl-pb-sd-cs-pe etc.
+  language: "java" #javascript, java
+
+
 jobs:
-  build:
+  build-qa:
     runs-on: ubuntu-latest
     steps:
-
       - uses: actions/checkout@v3 #Clona el repositorio en la maquina de ubuntu
       - uses: actions/setup-java@v3 #Instalación JDK java
         with:
           distribution: 'adopt'
-          java-version: 8
+          java-version: '8'
       - name: Validate Gradle wrapper
         uses: gradle/wrapper-validation-action@e6e38bacfdf1a337459f332974bb2327a31aaf4b
 
-  integration-test:
+  integration-test-qa:
     runs-on: ubuntu-latest
     environment: master
-    needs: [ build ]
+    needs: [ build-qa ]
     steps:
       - uses: actions/setup-java@v3 #Instalación JDK java
         with:
@@ -37,9 +50,6 @@ jobs:
           path: |
             target/site/serenity/serenity-summary.html
             target/site/serenity/index.html
-
-
-
 
 
 
