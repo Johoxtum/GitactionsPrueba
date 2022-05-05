@@ -1,0 +1,15 @@
+{
+  "name": "pipeline",
+  "version": "1.0.0",
+  "description": "",
+  "main": "eval-end2end.js",
+  "scripts": {
+    "evaluate": "node eval-end2end.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.5"
+  }
+}
