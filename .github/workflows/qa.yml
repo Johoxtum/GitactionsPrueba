@@ -50,6 +50,10 @@ jobs:
           path: |
             target/site/serenity/serenity-summary.html
             target/site/serenity/index.html
-
-
-
+      - name: Results Owasp Zap
+        run: |
+          cd pipeline/
+          pwd
+          ls
+          npm i
+          npm run evaluate
