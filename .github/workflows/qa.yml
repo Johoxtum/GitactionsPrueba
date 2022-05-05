@@ -41,12 +41,13 @@ jobs:
         uses: gradle/gradle-build-action@0d13054264b0bb894ded474f08ebb30921341cee
         with:
           arguments: build
+      - name: Ejectution report
+        uses: gradle :reports
       - name: Report news
         if: ${{ always() }}
         uses: actions/upload-artifact@v2
         with:
           name: report saucedemo
-          uses: gradle :reports
           retention-days: 1
           path: |
             target/site/serenity/serenity-summary.html
