@@ -67,14 +67,14 @@ dependencies {
 
 test {
     testLogging.showStandardStreams = true
-    maxParallelForks=3
-    systemProperties System.getProperties()
+
+
 }
 
 serenity {
     reports = ["single-page-html"]
 }
 
-gradle.startParameter.continueOnFailure = true
+
 
 test.finalizedBy(aggregate)
