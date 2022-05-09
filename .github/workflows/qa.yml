@@ -54,7 +54,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: report saucedemo
-          retention-days: 1
           path: |
+            target/site/serenity/index.html
             target/site/serenity/serenity-summary.html
-
+          retention-days: 1
