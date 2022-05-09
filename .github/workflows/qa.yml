@@ -46,6 +46,7 @@ jobs:
         uses: zaproxy/action-full-scan@v0.3.0
         with:
             target: 'https://www.saucedemo.com/'
+
       - name: Report news
         if: ${{ always() }}
         uses: actions/upload-artifact@v2
@@ -54,4 +55,4 @@ jobs:
           retention-days: 1
           path: |
             target/site/serenity/serenity-summary.html
-            target/site/serenity/index.html
+            ./target/site/serenity
