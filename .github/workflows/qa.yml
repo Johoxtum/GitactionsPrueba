@@ -19,8 +19,8 @@ jobs:
   build-qa:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2 #Clona el repositorio en la maquina de ubuntu
-      - uses: actions/setup-java@v2 #Instalación JDK java
+      - uses: actions/checkout@v3 #Clona el repositorio en la maquina de ubuntu
+      - uses: actions/setup-java@v3 #Instalación JDK java
         with:
           distribution: 'adopt'
           java-version: '8'
@@ -33,11 +33,7 @@ jobs:
     environment: master
     needs: [ build-qa ]
     steps:
-      - uses: actions/setup-java@v2 #Instalación JDK java
-        with:
-          distribution: 'adopt'
-          java-version: '8'
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Run test with gradle
         uses: gradle/gradle-build-action@0d13054264b0bb894ded474f08ebb30921341cee
         with:
