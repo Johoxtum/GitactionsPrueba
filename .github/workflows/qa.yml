@@ -42,11 +42,13 @@ jobs:
         uses: gradle/gradle-build-action@0d13054264b0bb894ded474f08ebb30921341cee
         with:
           arguments: build -i
-      - name: ZAP Scan
-        uses: zaproxy/action-full-scan@v0.3.0
-        with:
-            target: 'https://www.saucedemo.com/'
-
+      - name: Results Owasp Zap
+        run: |
+          cd pipeline/
+          pwd
+          ls
+          npm i
+          npm run evaluate
       - name: Report news
         if: ${{ always() }}
         uses: actions/upload-artifact@v2
