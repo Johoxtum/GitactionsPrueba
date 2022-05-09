@@ -57,4 +57,4 @@ jobs:
           retention-days: 1
           path: |
             target/site/serenity/serenity-summary.html
-            ./target/site/serenity
+
