@@ -38,13 +38,12 @@ jobs:
         uses: gradle/gradle-build-action@0d13054264b0bb894ded474f08ebb30921341cee
         with:
           arguments: build -i
-      - name: Results Owasp Zap
-        run: |
-          cd pipeline/
-          pwd
-          ls
-          npm i
-          npm run evaluate
+      - name: ZAP Scan
+        uses: zaproxy/action-baseline@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          target: 'https://www.saucedemo.com/'
+          rules_file_name: '.github/workflows/rules.tsv'
       - name: Report news
         if: ${{ always() }}
         uses: actions/upload-artifact@v2
